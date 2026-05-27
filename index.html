@@ -247,19 +247,26 @@
   /* ══════════════════════════════════════
      10. CURRENCIES
   ══════════════════════════════════════ */
-  .currencies-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; margin-top: 32px; }
-  .currency-col { }
-  .currency-col-title { font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; color: var(--mid); margin-bottom: 16px; padding-bottom: 10px; border-bottom: 2px solid var(--border); }
-  .chain-group { margin-bottom: 16px; }
-  .chain-name { font-size: 12px; font-weight: 700; color: var(--black); margin-bottom: 8px; display: flex; align-items: center; gap: 8px; }
-  .chain-icon { width: 20px; height: 20px; border-radius: 50%; background: var(--pale); border: 1px solid var(--border); flex-shrink: 0; }
-  .token-row { display: flex; flex-wrap: wrap; gap: 6px; margin-left: 28px; }
-  .token-badge { background: var(--pale); border: 1px solid var(--border); border-radius: 4px; padding: 3px 9px; font-size: 11px; font-weight: 600; color: var(--mid); }
-  .token-badge.coming-soon { opacity: .5; }
-  .coming-label { font-size: 10px; background: #eee; border: 1px dashed var(--border); border-radius: 10px; padding: 2px 7px; color: var(--light); margin-left: 4px; }
-  .fiat-method { display: flex; align-items: center; gap: 12px; padding: 12px 14px; border: 1.5px solid var(--border); border-radius: var(--radius); margin-bottom: 10px; }
+  .currencies-header { text-align: center; margin-bottom: 32px; }
+  .currencies-header .section-heading { font-size: 32px; margin-bottom: 8px; }
+  .currencies-subtitle { font-size: 14px; color: var(--mid); max-width: 560px; margin: 0 auto 28px; }
+  .currencies-tabs { display: flex; justify-content: center; gap: 4px; margin-bottom: 36px; }
+  .cur-tab { padding: 8px 22px; border-radius: 40px; font-size: 13px; font-weight: 600; cursor: default; border: 2px solid transparent; color: var(--mid); background: transparent; }
+  .cur-tab.active { border-color: var(--black); color: var(--black); background: var(--white); }
+  .currencies-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
+  .chain-card { display: flex; align-items: center; gap: 12px; padding: 14px 16px; border: 1.5px solid var(--border); border-radius: 12px; background: var(--white); }
+  .chain-card.coming { opacity: .45; }
+  .chain-circle { width: 38px; height: 38px; border-radius: 50%; background: var(--pale); border: 1.5px solid var(--border); flex-shrink: 0; }
+  .chain-info { display: flex; flex-direction: column; gap: 2px; }
+  .chain-label { font-size: 13px; font-weight: 700; color: var(--black); }
+  .chain-ticker { font-size: 11px; color: var(--light); font-weight: 500; }
+  .coming-badge { font-size: 9px; font-weight: 700; text-transform: uppercase; letter-spacing: .06em; background: var(--pale); border: 1px dashed var(--border); border-radius: 6px; padding: 1px 5px; color: var(--light); margin-top: 2px; width: fit-content; }
+  .currencies-divider { border: none; border-top: 1.5px solid var(--border); margin: 32px 0; }
+  .fiat-section-title { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: .1em; color: var(--light); margin-bottom: 16px; text-align: center; }
+  .fiat-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 12px; }
+  .fiat-card { display: flex; align-items: center; gap: 10px; padding: 12px 14px; border: 1.5px solid var(--border); border-radius: 12px; background: var(--white); }
   .fiat-icon { width: 36px; height: 24px; background: var(--pale); border: 1px solid var(--border); border-radius: 4px; flex-shrink: 0; }
-  .fiat-name { font-size: 13px; font-weight: 600; color: var(--black); }
+  .fiat-name { font-size: 12px; font-weight: 600; color: var(--black); }
 
   /* ══════════════════════════════════════
      11. FAQ
@@ -692,46 +699,57 @@
      10. CURRENCIES & PAYMENT METHODS
 ───────────────────────────────────────── -->
 <section class="section-gray" data-section="10 · CURRENCIES">
-  <span class="section-tag">Supported</span>
-  <div class="section-heading">Supported Currencies &amp; Payment Methods</div>
+  <div class="currencies-header">
+    <span class="section-tag">Supported</span>
+    <div class="section-heading">Supported Blockchains &amp; Currencies</div>
+    <p class="currencies-subtitle">Accept stablecoin payments across major blockchains, with card and fiat onramps for end users.</p>
+    <div class="currencies-tabs">
+      <div class="cur-tab active">Blockchains</div>
+      <div class="cur-tab">USDT</div>
+      <div class="cur-tab">USDC</div>
+      <div class="cur-tab">Fiat</div>
+    </div>
+  </div>
+
   <div class="currencies-grid">
-    <div class="currency-col">
-      <div class="currency-col-title">Blockchain</div>
-      <div class="chain-group">
-        <div class="chain-name"><div class="chain-icon"></div>Ethereum</div>
-        <div class="token-row"><span class="token-badge">USDT</span><span class="token-badge">USDC</span><span class="token-badge">ETH</span></div>
-      </div>
-      <div class="chain-group">
-        <div class="chain-name"><div class="chain-icon"></div>Polygon</div>
-        <div class="token-row"><span class="token-badge">USDT</span><span class="token-badge">USDC</span><span class="token-badge">POL</span></div>
-      </div>
-      <div class="chain-group">
-        <div class="chain-name"><div class="chain-icon"></div>Base</div>
-        <div class="token-row"><span class="token-badge">USDC</span><span class="token-badge">cbBTC</span><span class="token-badge">ETH</span></div>
-      </div>
-      <div class="chain-group">
-        <div class="chain-name"><div class="chain-icon"></div>Tron</div>
-        <div class="token-row"><span class="token-badge">USDT</span><span class="token-badge">TRX</span></div>
-      </div>
-      <div class="chain-group">
-        <div class="chain-name"><div class="chain-icon"></div>Bitcoin</div>
-        <div class="token-row"><span class="token-badge">BTC</span></div>
-      </div>
-      <div class="chain-group" style="opacity:.5;">
-        <div class="chain-name"><div class="chain-icon"></div>Solana <span class="coming-label">Coming Soon</span></div>
-      </div>
-      <div class="chain-group" style="opacity:.5;">
-        <div class="chain-name"><div class="chain-icon"></div>TON <span class="coming-label">Coming Soon</span></div>
-      </div>
+    <div class="chain-card">
+      <div class="chain-circle"></div>
+      <div class="chain-info"><div class="chain-label">Ethereum</div><div class="chain-ticker">ETH · USDT · USDC</div></div>
     </div>
-    <div class="currency-col">
-      <div class="currency-col-title">Fiat / Card</div>
-      <div class="fiat-method"><div class="fiat-icon"></div><div class="fiat-name">Mastercard</div></div>
-      <div class="fiat-method"><div class="fiat-icon"></div><div class="fiat-name">Visa</div></div>
-      <div class="fiat-method"><div class="fiat-icon"></div><div class="fiat-name">Apple Pay</div></div>
-      <div class="fiat-method"><div class="fiat-icon"></div><div class="fiat-name">Google Pay</div></div>
-      <div class="fiat-method"><div class="fiat-icon"></div><div class="fiat-name">SEPA</div></div>
+    <div class="chain-card">
+      <div class="chain-circle"></div>
+      <div class="chain-info"><div class="chain-label">Polygon</div><div class="chain-ticker">POL · USDT · USDC</div></div>
     </div>
+    <div class="chain-card">
+      <div class="chain-circle"></div>
+      <div class="chain-info"><div class="chain-label">Base</div><div class="chain-ticker">ETH · USDC · cbBTC</div></div>
+    </div>
+    <div class="chain-card">
+      <div class="chain-circle"></div>
+      <div class="chain-info"><div class="chain-label">Tron</div><div class="chain-ticker">TRX · USDT</div></div>
+    </div>
+    <div class="chain-card">
+      <div class="chain-circle"></div>
+      <div class="chain-info"><div class="chain-label">Bitcoin</div><div class="chain-ticker">BTC</div></div>
+    </div>
+    <div class="chain-card coming">
+      <div class="chain-circle"></div>
+      <div class="chain-info"><div class="chain-label">Solana</div><div class="chain-ticker">SOL</div><div class="coming-badge">Coming Soon</div></div>
+    </div>
+    <div class="chain-card coming">
+      <div class="chain-circle"></div>
+      <div class="chain-info"><div class="chain-label">TON</div><div class="chain-ticker">TON</div><div class="coming-badge">Coming Soon</div></div>
+    </div>
+  </div>
+
+  <hr class="currencies-divider" />
+  <div class="fiat-section-title">Fiat &amp; Card Methods</div>
+  <div class="fiat-grid">
+    <div class="fiat-card"><div class="fiat-icon"></div><div class="fiat-name">Mastercard</div></div>
+    <div class="fiat-card"><div class="fiat-icon"></div><div class="fiat-name">Visa</div></div>
+    <div class="fiat-card"><div class="fiat-icon"></div><div class="fiat-name">Apple Pay</div></div>
+    <div class="fiat-card"><div class="fiat-icon"></div><div class="fiat-name">Google Pay</div></div>
+    <div class="fiat-card"><div class="fiat-icon"></div><div class="fiat-name">SEPA</div></div>
   </div>
 </section>
 
