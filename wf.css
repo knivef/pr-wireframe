@@ -73,9 +73,19 @@ section::before { content: attr(data-s); position: absolute; top: 12px; right: 2
 ════════════════════════════════════ */
 .nav { position: sticky; top: 0; z-index: 100; background: var(--dark); display: flex; align-items: center; justify-content: space-between; padding: 0 32px; height: 56px; border-bottom: 1px solid #2a2a2a; }
 .nav-logo { font-size: 18px; font-weight: 800; color: var(--white); letter-spacing: -.02em; text-decoration: none; }
-.nav-links { display: flex; gap: 4px; }
-.nav-link { font-size: 13px; color: #aaa; padding: 6px 12px; cursor: default; }
+.nav-links { display: flex; gap: 2px; align-items: center; }
+.nav-link { font-size: 13px; color: #aaa; padding: 6px 12px; cursor: default; white-space: nowrap; }
 .nav-link.arr::after { content: ' ▾'; font-size: 10px; }
+/* dropdown */
+.nav-item { position: relative; display: flex; align-items: center; }
+.nav-item:hover .nav-drop { display: block; }
+.nav-drop { display: none; position: absolute; top: calc(100% + 4px); left: 0; background: #1e1e1e; border: 1px solid #333; border-radius: 8px; padding: 6px; min-width: 200px; z-index: 200; box-shadow: 0 8px 24px rgba(0,0,0,.4); }
+.nav-drop-link { display: flex; align-items: center; gap: 8px; padding: 8px 12px; font-size: 12px; color: #aaa; text-decoration: none; border-radius: 5px; white-space: nowrap; }
+.nav-drop-link:hover { background: #2a2a2a; color: var(--white); }
+.nav-drop-link .ndl-icon { width: 24px; height: 24px; background: #2a2a2a; border: 1px solid #3a3a3a; border-radius: 5px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+.nav-drop-link .ndl-icon svg { width: 12px; height: 12px; stroke: #888; fill: none; stroke-width: 1.8; }
+.nav-drop-link:hover .ndl-icon { background: #333; }
+.nav-drop-divider { border: none; border-top: 1px solid #2a2a2a; margin: 4px 0; }
 .nav-right { display: flex; gap: 8px; }
 .nav-btn { font-size: 12px; font-weight: 600; padding: 7px 16px; border-radius: var(--r); cursor: default; }
 .nav-btn-ghost { border: 1.5px solid #555; color: #ccc; background: transparent; }
