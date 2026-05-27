@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Card-to-Crypto Onramp — PayRam Wireframe</title>
+<link rel="stylesheet" href="wf.css" />
+</head>
+<body>
+
+<nav class="nav">
+  <a href="index.html" class="nav-logo">PayRam</a>
+  <div class="nav-links"><span class="nav-link arr">Products</span><span class="nav-link">Integrate</span><span class="nav-link arr">Resources</span></div>
+  <div class="nav-right"><button class="nav-btn nav-btn-ghost">Contact Us</button><button class="nav-btn nav-btn-solid">Try Live Demo</button></div>
+</nav>
+
+<!-- ① HERO -->
+<div class="hero-fp" data-s="01 · HERO">
+  <div>
+    <div class="hero-badge"><div class="badge-dot"></div> Circle Alliance Partner</div>
+    <h1>Let customers pay by card. Receive crypto.</h1>
+    <p class="hdesc">Your customers pay with Visa or Mastercard. You receive USDC or USDT directly in your wallet. No wallet setup required for the end user.</p>
+    <div class="btn-row">
+      <button class="btn btn-outline" style="border-color:#555;color:#ccc">Visit Docs</button>
+      <button class="btn btn-solid">Talk to Team</button>
+    </div>
+    <div class="pill-row">
+      <span class="pill">Visa &amp; Mastercard</span>
+      <span class="pill">Apple Pay</span>
+      <span class="pill">Google Pay</span>
+      <span class="pill">SEPA</span>
+    </div>
+  </div>
+  <div class="ph" style="height:300px;">
+    <svg viewBox="0 0 24 24"><rect x="2" y="5" width="20" height="14" rx="2"/><line x1="2" y1="10" x2="22" y2="10"/></svg>
+    <div class="ph-label">Card entry (left) → conversion arrow → wallet receives USDC (right)</div>
+  </div>
+</div>
+
+<!-- ② PROBLEM -->
+<section class="s-gray" data-s="02 · PROBLEM">
+  <div class="center"><span class="section-tag">The Problem</span><div class="section-heading">Crypto-only checkout costs you customers</div></div>
+  <div class="prob-grid">
+    <div class="prob-item"><div class="prob-x">✕</div><div class="prob-text">Most crypto-native merchants lose customers who don't have a wallet or don't understand how to send crypto to a checkout address.</div></div>
+    <div class="prob-item"><div class="prob-x">✕</div><div class="prob-text">Existing fiat-to-crypto onramps are slow, expensive, and require users to complete KYC before they can transact.</div></div>
+    <div class="prob-item"><div class="prob-x">✕</div><div class="prob-text">Merchants accepting only crypto are limiting their addressable market to crypto-native users — a fraction of potential buyers.</div></div>
+  </div>
+</section>
+
+<!-- ③ HOW IT WORKS -->
+<section class="s-dark" data-s="03 · HOW IT WORKS">
+  <div class="center"><span class="section-tag">How It Works</span><div class="section-heading">Card payment. Crypto settlement.</div></div>
+  <div class="steps-wrap">
+    <div class="steps-row">
+      <div class="step">
+        <div class="step-num">1</div>
+        <div class="step-icon"><svg viewBox="0 0 24 24"><rect x="2" y="5" width="20" height="14" rx="2"/><line x1="2" y1="10" x2="22" y2="10"/></svg></div>
+        <div class="step-title">Customer selects card</div>
+        <div class="step-desc">Visa, Mastercard, Apple Pay, Google Pay, or SEPA at checkout.</div>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <div class="step-icon"><svg viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></div>
+        <div class="step-title">PayRam processes card</div>
+        <div class="step-desc">Onramp partner handles the fiat leg securely and compliantly.</div>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <div class="step-icon"><svg viewBox="0 0 24 24"><polyline points="17 1 21 5 17 9"/><path d="M3 11V9a4 4 0 0 1 4-4h14"/><polyline points="7 23 3 19 7 15"/><path d="M21 13v2a4 4 0 0 1-4 4H3"/></svg></div>
+        <div class="step-title">Conversion happens</div>
+        <div class="step-desc">Fiat converts to merchant's preferred stablecoin at market rate.</div>
+      </div>
+      <div class="step">
+        <div class="step-num">4</div>
+        <div class="step-icon"><svg viewBox="0 0 24 24"><path d="M20 12V8H6a2 2 0 0 1-2-2V4"/><path d="M4 6v14a2 2 0 0 0 2 2h14v-4"/></svg></div>
+        <div class="step-title">Merchant receives crypto</div>
+        <div class="step-desc">USDC or USDT lands directly in your self-hosted wallet.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ④ BENEFITS -->
+<section class="s-gray" data-s="04 · BENEFITS">
+  <span class="section-tag">Key Benefits</span>
+  <div class="section-heading">Bridge the card-to-crypto gap</div>
+  <div class="benefits-grid">
+    <div class="card"><div class="ci"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg></div><div class="ct">No wallet required</div><div class="cd">Customers pay like they always have. Crypto happens behind the scenes.</div></div>
+    <div class="card"><div class="ci"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></div><div class="ct">Wider addressable market</div><div class="cd">Accept from any customer with Visa, Mastercard, Apple Pay, or Google Pay.</div></div>
+    <div class="card"><div class="ci"><svg viewBox="0 0 24 24"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div><div class="ct">You receive stablecoins</div><div class="cd">Merchant always receives USDC or USDT regardless of how the customer paid.</div></div>
+    <div class="card"><div class="ci"><svg viewBox="0 0 24 24"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg></div><div class="ct">Competitive rates</div><div class="cd">No hidden spread or surprise fees at the point of conversion.</div></div>
+    <div class="card"><div class="ci"><svg viewBox="0 0 24 24"><rect x="1" y="3" width="15" height="13" rx="2"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/></svg></div><div class="ct">SEPA support</div><div class="cd">Accept bank transfers from European customers via SEPA direct debit.</div></div>
+    <div class="card"><div class="ci"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div><div class="ct">Self-custodial on merchant side</div><div class="cd">Funds go directly to your wallet. No processor holds your fiat or crypto.</div></div>
+  </div>
+</section>
+
+<!-- ⑤ DEEP DIVE -->
+<section class="s-white" data-s="05 · DEEP DIVE">
+  <span class="section-tag">Deep Dive</span>
+  <div class="section-heading">The full flow, visualised</div>
+  <div class="deepdive-rows">
+    <div class="ddr">
+      <div class="ddr-text"><div class="ddr-label">Customer view</div><div class="ddr-title">Familiar checkout, zero friction</div><div class="ddr-desc">The customer sees a standard card entry form with Visa, Mastercard, Apple Pay, and Google Pay logos. They complete payment exactly as they would on any e-commerce site — no wallet address, no crypto knowledge required.</div></div>
+      <div class="ddr-visual"><div class="ph" style="height:210px;"><svg viewBox="0 0 24 24"><rect x="2" y="5" width="20" height="14" rx="2"/><line x1="2" y1="10" x2="22" y2="10"/></svg><div class="ph-label">Card checkout UI — Visa / Mastercard / Apple Pay / Google Pay logos</div></div></div>
+    </div>
+    <div class="ddr flip">
+      <div class="ddr-text"><div class="ddr-label">Conversion flow</div><div class="ddr-title">Fiat in. Stablecoin out.</div><div class="ddr-desc">PayRam routes the fiat transaction through an onramp partner who handles FX and compliance. The resulting stablecoin (USDC or USDT) is sent directly to the merchant's configured wallet address on the selected chain.</div></div>
+      <div class="ddr-visual"><div class="ph" style="height:210px;"><svg viewBox="0 0 24 24"><polyline points="17 1 21 5 17 9"/><path d="M3 11V9a4 4 0 0 1 4-4h14"/></svg><div class="ph-label">Fiat → onramp partner → stablecoin → merchant wallet diagram</div></div></div>
+    </div>
+    <div class="ddr">
+      <div class="ddr-text"><div class="ddr-label">Operator dashboard</div><div class="ddr-title">Card-originated settlements labelled separately</div><div class="ddr-desc">Incoming settlements from the onramp are labelled as card-originated in your Operator dashboard so you can distinguish them from direct crypto payments. Full breakdown by method, amount, and chain.</div></div>
+      <div class="ddr-visual"><div class="ph" style="height:210px;"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg><div class="ph-label">Dashboard settlements list — card-originated label visible</div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ⑥ USE CASES -->
+<section class="s-gray" data-s="06 · USE CASES">
+  <span class="section-tag">Use Cases</span>
+  <div class="section-heading">Who uses Card-to-Crypto</div>
+  <div class="persona-grid">
+    <div class="persona-card"><div class="persona-icon"><svg viewBox="0 0 24 24"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg></div><div class="persona-title">E-commerce Merchant</div><div class="persona-desc">Sells globally and wants to accept cards without giving up crypto settlement or dealing with a traditional PSP's reserves and delays.</div></div>
+    <div class="persona-card"><div class="persona-icon"><svg viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg></div><div class="persona-title">SaaS Founder</div><div class="persona-desc">Charges subscription fees in USDC but wants non-crypto customers to subscribe using their card. Bridge the gap without running two separate billing systems.</div></div>
+    <div class="persona-card"><div class="persona-icon"><svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8"/><path d="M12 17v4"/></svg></div><div class="persona-title">Gaming / iGaming Platform</div><div class="persona-desc">Accepts deposits via card from players who don't hold crypto, converts to stablecoin for in-platform use — no wallet required for the player.</div></div>
+  </div>
+</section>
+
+<!-- ⑦ COMPARISON -->
+<section class="s-white" data-s="07 · COMPARISON">
+  <div class="center"><span class="section-tag">Comparison</span><div class="section-heading">Cards via Stripe vs. cards via PayRam</div></div>
+  <div class="cmp-split">
+    <div class="cmp-col">
+      <div class="cmp-hdr old">Traditional Approach</div>
+      <div class="cmp-row old-row"><div class="cmp-dot x">✕</div>Accept cards via Stripe — receive fiat in bank account</div>
+      <div class="cmp-row old-row"><div class="cmp-dot x">✕</div>Customer must have a crypto wallet to pay in crypto</div>
+      <div class="cmp-row old-row"><div class="cmp-dot x">✕</div>2-5 day bank settlement window</div>
+      <div class="cmp-row old-row"><div class="cmp-dot x">✕</div>Rolling reserves withheld by processor</div>
+      <div class="cmp-row old-row"><div class="cmp-dot x">✕</div>KYC required for merchant account</div>
+    </div>
+    <div class="cmp-col">
+      <div class="cmp-hdr new">PayRam Card-to-Crypto</div>
+      <div class="cmp-row new-row"><div class="cmp-dot ok">✓</div>Accept cards via PayRam — receive crypto in wallet</div>
+      <div class="cmp-row new-row"><div class="cmp-dot ok">✓</div>No crypto wallet required for the customer</div>
+      <div class="cmp-row new-row"><div class="cmp-dot ok">✓</div>Instant on-chain settlement</div>
+      <div class="cmp-row new-row"><div class="cmp-dot ok">✓</div>No rolling reserves</div>
+      <div class="cmp-row new-row"><div class="cmp-dot ok">✓</div>Permissionless merchant setup</div>
+    </div>
+  </div>
+</section>
+
+<!-- ⑧ RELATED -->
+<section class="s-gray" data-s="08 · RELATED">
+  <span class="section-tag">Explore More</span><div class="section-heading">Related features</div>
+  <div class="related-grid">
+    <div class="related-card card"><div class="ci"><svg viewBox="0 0 24 24"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/></svg></div><div class="ct">Payment Links &amp; API</div><div class="cd">Generate shareable links or integrate via REST API in minutes.</div><a class="related-link" href="payment-links.html">Learn more →</a></div>
+    <div class="related-card card"><div class="ci"><svg viewBox="0 0 24 24"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg></div><div class="ct">Shopify Plugin</div><div class="cd">Accept stablecoins at Shopify checkout — one-click install, no code.</div><a class="related-link" href="shopify.html">Learn more →</a></div>
+    <div class="related-card card"><div class="ci"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg></div><div class="ct">Operator Mode</div><div class="cd">Monitor card-originated settlements and all other payments in one dashboard.</div><a class="related-link" href="operator.html">Learn more →</a></div>
+  </div>
+</section>
+
+<!-- ⑨ FAQ -->
+<section class="s-white" data-s="09 · FAQ">
+  <div class="center"><span class="section-tag">FAQ</span><div class="section-heading">Frequently asked questions</div></div>
+  <div class="faq-wrap">
+    <div class="faq-item open"><div class="faq-q">What is a card-to-crypto onramp? <span class="faq-arrow">▲</span></div><div class="faq-a">A card-to-crypto onramp allows customers to pay using a debit or credit card and have the equivalent value converted and delivered as cryptocurrency to the merchant. The customer never needs a wallet — they pay like any normal card purchase.</div></div>
+    <div class="faq-item"><div class="faq-q">Which cards does PayRam's onramp support? <span class="faq-arrow">▼</span></div><div class="faq-a"></div></div>
+    <div class="faq-item"><div class="faq-q">What stablecoins does the merchant receive when a customer pays by card? <span class="faq-arrow">▼</span></div><div class="faq-a"></div></div>
+    <div class="faq-item"><div class="faq-q">Does the customer need a crypto wallet to pay by card through PayRam? <span class="faq-arrow">▼</span></div><div class="faq-a"></div></div>
+    <div class="faq-item"><div class="faq-q">Are there higher fees for card payments compared to direct crypto? <span class="faq-arrow">▼</span></div><div class="faq-a"></div></div>
+  </div>
+</section>
+
+<!-- ⑩ CTA -->
+<section class="cta-sec" data-s="10 · CTA">
+  <div class="section-tag">Get Started</div>
+  <div class="cta-headline">Accept cards. Settle in stablecoins.</div>
+  <div class="btn-row"><button class="btn btn-solid">Visit Docs</button><button class="btn btn-outline" style="border-color:#555;color:#ccc">Talk to Team</button></div>
+  <div class="cta-sub">No KYC required · Self-hosted · Go live in 10 minutes</div>
+</section>
+
+<footer class="footer">
+  <div class="footer-cols">
+    <div><div class="footer-logo">PayRam</div><div class="footer-tagline">The Payment Rail for Permissionless Commerce.</div></div>
+    <div><div class="footer-col-title">Products</div><ul class="footer-links"><li><a href="gateway.html">Gateway</a></li><li><a href="operator.html">Operator Mode</a></li><li><a href="shopify.html">Shopify Plugin</a></li><li><a href="card-to-crypto.html">Card Onramp</a></li></ul></div>
+    <div><div class="footer-col-title">Features</div><ul class="footer-links"><li><a href="payment-links.html">Payment Links</a></li><li><a href="deposit-wallets.html">Deposit Wallets</a></li><li><a href="smartsweep.html">SmartSweep</a></li><li><a href="payouts.html">Payouts</a></li></ul></div>
+    <div><div class="footer-col-title">Resources</div><ul class="footer-links"><li><a href="#">Docs</a></li><li><a href="#">Blog</a></li><li><a href="#">API Reference</a></li></ul></div>
+    <div><div class="footer-col-title">Company</div><ul class="footer-links"><li><a href="#">About</a></li><li><a href="#">Contact</a></li><li><a href="#">Careers</a></li></ul></div>
+    <div><div class="footer-col-title">Legal</div><ul class="footer-links"><li><a href="#">Terms</a></li><li><a href="#">Privacy</a></li><li><a href="#">Security</a></li></ul></div>
+  </div>
+  <div class="footer-bar"><div class="footer-bar-text">© 2026 PayRam · All rights reserved</div><div class="footer-bar-badges"><span class="footer-bar-badge">Audited by QuillAudits</span><span class="footer-bar-badge">Circle Alliance Partner</span></div></div>
+</footer>
+</body></html>

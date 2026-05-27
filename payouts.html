@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Payouts — PayRam Wireframe</title>
+<link rel="stylesheet" href="wf.css" />
+</head>
+<body>
+
+<nav class="nav">
+  <a href="index.html" class="nav-logo">PayRam</a>
+  <div class="nav-links"><span class="nav-link arr">Products</span><span class="nav-link">Integrate</span><span class="nav-link arr">Resources</span></div>
+  <div class="nav-right"><button class="nav-btn nav-btn-ghost">Contact Us</button><button class="nav-btn nav-btn-solid">Try Live Demo</button></div>
+</nav>
+
+<!-- ① HERO -->
+<div class="hero-fp" data-s="01 · HERO">
+  <div>
+    <div class="hero-badge"><div class="badge-dot"></div> Audited by QuillAudits</div>
+    <h1>Pay anyone, anywhere, instantly.</h1>
+    <p class="hdesc">Send stablecoin payouts to merchants, sellers, contractors, or users directly from your PayRam wallet. Batch or single. Manual or automated.</p>
+    <div class="btn-row">
+      <button class="btn btn-outline" style="border-color:#555;color:#ccc">Visit Docs</button>
+      <button class="btn btn-solid">Talk to Team</button>
+    </div>
+    <div class="pill-row">
+      <span class="pill">Batch payouts</span>
+      <span class="pill">API-triggered</span>
+      <span class="pill">Direct to wallet</span>
+    </div>
+  </div>
+  <div class="ph" style="height:300px;">
+    <svg viewBox="0 0 24 24"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+    <div class="ph-label">Payout queue — recipients, amounts, status (pending / sent / confirmed)</div>
+  </div>
+</div>
+
+<!-- ② PROBLEM -->
+<section class="s-gray" data-s="02 · PROBLEM">
+  <div class="center"><span class="section-tag">The Problem</span><div class="section-heading">Paying people globally is broken</div></div>
+  <div class="prob-grid">
+    <div class="prob-item"><div class="prob-x">✕</div><div class="prob-text">Paying multiple recipients in crypto requires manual transaction signing, address management, and reconciliation — especially at volume.</div></div>
+    <div class="prob-item"><div class="prob-x">✕</div><div class="prob-text">Traditional wire and ACH payouts take 1-5 business days and carry high fees for international recipients — unacceptable for real-time platforms.</div></div>
+    <div class="prob-item"><div class="prob-x">✕</div><div class="prob-text">Building a payout system in-house requires significant infrastructure, compliance overhead, and ongoing maintenance to stay reliable at scale.</div></div>
+  </div>
+</section>
+
+<!-- ③ HOW IT WORKS -->
+<section class="s-dark" data-s="03 · HOW IT WORKS">
+  <div class="center"><span class="section-tag">How It Works</span><div class="section-heading">From recipient list to on-chain settlement</div></div>
+  <div class="steps-wrap">
+    <div class="steps-row">
+      <div class="step">
+        <div class="step-num">1</div>
+        <div class="step-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg></div>
+        <div class="step-title">Define recipients</div>
+        <div class="step-desc">Add payout recipients by wallet address via dashboard or API. Label for reconciliation.</div>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <div class="step-icon"><svg viewBox="0 0 24 24"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
+        <div class="step-title">Set amount &amp; currency</div>
+        <div class="step-desc">Specify USDT, USDC, or other supported token. Multi-currency in one batch.</div>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <div class="step-icon"><svg viewBox="0 0 24 24"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></div>
+        <div class="step-title">Trigger payout</div>
+        <div class="step-desc">Fire one payout or submit a batch of hundreds via one API call or dashboard action.</div>
+      </div>
+      <div class="step">
+        <div class="step-num">4</div>
+        <div class="step-icon"><svg viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></div>
+        <div class="step-title">Settled on-chain</div>
+        <div class="step-desc">Funds leave your master wallet and arrive in recipient wallets within seconds.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ④ BENEFITS -->
+<section class="s-gray" data-s="04 · BENEFITS">
+  <span class="section-tag">Key Benefits</span>
+  <div class="section-heading">Fast, global, zero overhead</div>
+  <div class="benefits-grid">
+    <div class="card"><div class="ci"><svg viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></div><div class="ct">Instant on-chain settlement</div><div class="cd">Payouts arrive in seconds, not days. No banking hours, no weekends.</div></div>
+    <div class="card"><div class="ci"><svg viewBox="0 0 24 24"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/></svg></div><div class="ct">Batch payouts</div><div class="cd">Send to hundreds of recipients in a single transaction or API call.</div></div>
+    <div class="card"><div class="ci"><svg viewBox="0 0 24 24"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></div><div class="ct">API or dashboard</div><div class="cd">Trigger payouts programmatically or manually depending on your workflow.</div></div>
+    <div class="card"><div class="ci"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></div><div class="ct">Global by default</div><div class="cd">No currency conversion, no SWIFT fees, no geographic restrictions.</div></div>
+    <div class="card"><div class="ci"><svg viewBox="0 0 24 24"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/></svg></div><div class="ct">Full payout history</div><div class="cd">Every payout logged with recipient, amount, chain, timestamp, and txn hash.</div></div>
+    <div class="card"><div class="ci"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div><div class="ct">No rolling reserves held</div><div class="cd">You control your funds. Payouts go out when you say so — no holds.</div></div>
+  </div>
+</section>
+
+<!-- ⑤ DEEP DIVE -->
+<section class="s-white" data-s="05 · DEEP DIVE">
+  <span class="section-tag">Deep Dive</span>
+  <div class="section-heading">Every way to send a payout</div>
+  <div class="deepdive-rows">
+    <div class="ddr">
+      <div class="ddr-text"><div class="ddr-label">Single payout</div><div class="ddr-title">Simple dashboard form</div><div class="ddr-desc">Enter a recipient wallet address, amount, currency, and optional memo. Submit. The payout fires immediately and appears in your history with a live status. No code required for ad-hoc payouts.</div></div>
+      <div class="ddr-visual"><div class="ph" style="height:210px;"><svg viewBox="0 0 24 24"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg><div class="ph-label">Single payout form — address, amount, currency, memo</div></div></div>
+    </div>
+    <div class="ddr flip">
+      <div class="ddr-text"><div class="ddr-label">Batch payouts</div><div class="ddr-title">Upload a CSV. Send hundreds at once.</div><div class="ddr-desc">Import a CSV with recipient addresses, amounts, and currencies. PayRam validates the list, shows a preview with total, and executes the batch in one operation. Ideal for weekly seller payouts or contractor runs.</div></div>
+      <div class="ddr-visual"><div class="ph" style="height:210px;"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="12" y1="18" x2="12" y2="12"/><line x1="9" y1="15" x2="15" y2="15"/></svg><div class="ph-label">Batch CSV upload — recipient list with status preview</div></div></div>
+    </div>
+    <div class="ddr">
+      <div class="ddr-text"><div class="ddr-label">Payout history</div><div class="ddr-title">Complete audit trail</div><div class="ddr-desc">Every outgoing payout is logged with recipient label, wallet address, amount, chain, status (pending / confirmed / failed), and txn hash. Filter by date range, recipient, or status. Export to CSV for accounting.</div></div>
+      <div class="ddr-visual"><div class="ph" style="height:210px;"><svg viewBox="0 0 24 24"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/></svg><div class="ph-label">Payout history table — status, recipient, amount, txn hash</div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ⑥ USE CASES -->
+<section class="s-gray" data-s="06 · USE CASES">
+  <span class="section-tag">Use Cases</span>
+  <div class="section-heading">Who uses Payouts</div>
+  <div class="persona-grid">
+    <div class="persona-card"><div class="persona-icon"><svg viewBox="0 0 24 24"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg></div><div class="persona-title">Marketplace Operator</div><div class="persona-desc">Pays out seller earnings in USDC weekly via batch payout triggered by API. Zero banking friction for global sellers — they need only a wallet address.</div></div>
+    <div class="persona-card"><div class="persona-icon"><svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8"/><path d="M12 17v4"/></svg></div><div class="persona-title">iGaming Platform</div><div class="persona-desc">Processes player withdrawal requests in real time as individual payouts from treasury. Instant settlement means players receive funds without waiting for banking hours.</div></div>
+    <div class="persona-card"><div class="persona-icon"><svg viewBox="0 0 24 24"><path d="M17.8 19.2L16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z"/></svg></div><div class="persona-title">Gig Economy Platform</div><div class="persona-desc">Sends contractor payments globally in stablecoins with zero banking friction. No SWIFT fees, no cutoff times — contractors receive funds in seconds regardless of location.</div></div>
+  </div>
+</section>
+
+<!-- ⑦ COMPARISON -->
+<section class="s-white" data-s="07 · COMPARISON">
+  <div class="center"><span class="section-tag">Comparison</span><div class="section-heading">Wire transfers vs. PayRam Payouts</div></div>
+  <div class="cmp-split">
+    <div class="cmp-col">
+      <div class="cmp-hdr old">Traditional Approach</div>
+      <div class="cmp-row old-row"><div class="cmp-dot x">✕</div>Wire transfers take 1-5 business days</div>
+      <div class="cmp-row old-row"><div class="cmp-dot x">✕</div>High international transfer fees (SWIFT)</div>
+      <div class="cmp-row old-row"><div class="cmp-dot x">✕</div>Manual transaction signing per recipient</div>
+      <div class="cmp-row old-row"><div class="cmp-dot x">✕</div>Bank cutoff times and weekend delays</div>
+      <div class="cmp-row old-row"><div class="cmp-dot x">✕</div>Recipients need a bank account</div>
+    </div>
+    <div class="cmp-col">
+      <div class="cmp-hdr new">PayRam Payouts</div>
+      <div class="cmp-row new-row"><div class="cmp-dot ok">✓</div>On-chain settlement in seconds</div>
+      <div class="cmp-row new-row"><div class="cmp-dot ok">✓</div>Near-zero fees on L2 networks</div>
+      <div class="cmp-row new-row"><div class="cmp-dot ok">✓</div>Batch API for hundreds of recipients at once</div>
+      <div class="cmp-row new-row"><div class="cmp-dot ok">✓</div>24/7, no cutoffs, no holidays</div>
+      <div class="cmp-row new-row"><div class="cmp-dot ok">✓</div>Recipients need only a wallet address</div>
+    </div>
+  </div>
+</section>
+
+<!-- ⑧ RELATED -->
+<section class="s-gray" data-s="08 · RELATED">
+  <span class="section-tag">Explore More</span><div class="section-heading">Related features</div>
+  <div class="related-grid">
+    <div class="related-card card"><div class="ci"><svg viewBox="0 0 24 24"><polyline points="23 4 23 10 17 10"/><path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"/></svg></div><div class="ct">SmartSweep</div><div class="cd">Consolidate deposit wallet balances into your master wallet before payouts.</div><a class="related-link" href="smartsweep.html">Learn more →</a></div>
+    <div class="related-card card"><div class="ci"><svg viewBox="0 0 24 24"><path d="M20 12V8H6a2 2 0 0 1-2-2V4"/><path d="M4 6v14a2 2 0 0 0 2 2h14v-4"/></svg></div><div class="ct">Customer Deposit Wallets</div><div class="cd">Collect incoming funds per customer before triggering payouts to them.</div><a class="related-link" href="deposit-wallets.html">Learn more →</a></div>
+    <div class="related-card card"><div class="ci"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg></div><div class="ct">Operator Mode</div><div class="cd">Monitor your payout queue and export payout history for accounting.</div><a class="related-link" href="operator.html">Learn more →</a></div>
+  </div>
+</section>
+
+<!-- ⑨ FAQ -->
+<section class="s-white" data-s="09 · FAQ">
+  <div class="center"><span class="section-tag">FAQ</span><div class="section-heading">Frequently asked questions</div></div>
+  <div class="faq-wrap">
+    <div class="faq-item open"><div class="faq-q">How do I send crypto payouts to multiple recipients at once? <span class="faq-arrow">▲</span></div><div class="faq-a">Use the batch payout feature in the Operator dashboard or the <code>POST /payouts/batch</code> API endpoint. Upload a CSV with recipient addresses, amounts, and currencies, review the preview, and submit. PayRam processes all recipients in a single operation.</div></div>
+    <div class="faq-item"><div class="faq-q">Which stablecoins can I use for PayRam payouts? <span class="faq-arrow">▼</span></div><div class="faq-a"></div></div>
+    <div class="faq-item"><div class="faq-q">Is there a limit to how many payouts I can send in one batch? <span class="faq-arrow">▼</span></div><div class="faq-a"></div></div>
+    <div class="faq-item"><div class="faq-q">How long do PayRam payouts take to arrive? <span class="faq-arrow">▼</span></div><div class="faq-a"></div></div>
+    <div class="faq-item"><div class="faq-q">Can I schedule recurring payouts with PayRam? <span class="faq-arrow">▼</span></div><div class="faq-a"></div></div>
+  </div>
+</section>
+
+<!-- ⑩ CTA -->
+<section class="cta-sec" data-s="10 · CTA">
+  <div class="section-tag">Get Started</div>
+  <div class="cta-headline">Send your first payout in minutes.</div>
+  <div class="btn-row"><button class="btn btn-solid">Visit Docs</button><button class="btn btn-outline" style="border-color:#555;color:#ccc">Talk to Team</button></div>
+  <div class="cta-sub">No KYC required · Self-hosted · Go live in 10 minutes</div>
+</section>
+
+<footer class="footer">
+  <div class="footer-cols">
+    <div><div class="footer-logo">PayRam</div><div class="footer-tagline">The Payment Rail for Permissionless Commerce.</div></div>
+    <div><div class="footer-col-title">Products</div><ul class="footer-links"><li><a href="gateway.html">Gateway</a></li><li><a href="operator.html">Operator Mode</a></li><li><a href="shopify.html">Shopify Plugin</a></li></ul></div>
+    <div><div class="footer-col-title">Features</div><ul class="footer-links"><li><a href="payment-links.html">Payment Links</a></li><li><a href="deposit-wallets.html">Deposit Wallets</a></li><li><a href="smartsweep.html">SmartSweep</a></li><li><a href="payouts.html">Payouts</a></li></ul></div>
+    <div><div class="footer-col-title">Resources</div><ul class="footer-links"><li><a href="#">Docs</a></li><li><a href="#">Blog</a></li><li><a href="#">API Reference</a></li></ul></div>
+    <div><div class="footer-col-title">Company</div><ul class="footer-links"><li><a href="#">About</a></li><li><a href="#">Contact</a></li><li><a href="#">Careers</a></li></ul></div>
+    <div><div class="footer-col-title">Legal</div><ul class="footer-links"><li><a href="#">Terms</a></li><li><a href="#">Privacy</a></li><li><a href="#">Security</a></li></ul></div>
+  </div>
+  <div class="footer-bar"><div class="footer-bar-text">© 2026 PayRam · All rights reserved</div><div class="footer-bar-badges"><span class="footer-bar-badge">Audited by QuillAudits</span><span class="footer-bar-badge">Circle Alliance Partner</span></div></div>
+</footer>
+</body></html>

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Customer Deposit Wallets — PayRam Wireframe</title>
+<link rel="stylesheet" href="wf.css" />
+</head>
+<body>
+
+<nav class="nav">
+  <a href="index.html" class="nav-logo">PayRam</a>
+  <div class="nav-links"><span class="nav-link arr">Products</span><span class="nav-link">Integrate</span><span class="nav-link arr">Resources</span></div>
+  <div class="nav-right"><button class="nav-btn nav-btn-ghost">Contact Us</button><button class="nav-btn nav-btn-solid">Try Live Demo</button></div>
+</nav>
+
+<!-- ① HERO -->
+<div class="hero-fp" data-s="01 · HERO">
+  <div>
+    <div class="hero-badge"><div class="badge-dot"></div> Audited by QuillAudits</div>
+    <h1>One address per customer. Zero reconciliation.</h1>
+    <p class="hdesc">Assign a unique on-chain deposit address to every customer. Track balances, attribute payments, and eliminate address reuse automatically.</p>
+    <div class="btn-row">
+      <button class="btn btn-outline" style="border-color:#555;color:#ccc">Visit Docs</button>
+      <button class="btn btn-solid">Talk to Team</button>
+    </div>
+    <div class="pill-row">
+      <span class="pill">Unique per customer</span>
+      <span class="pill">Multi-chain</span>
+      <span class="pill">Real-time attribution</span>
+    </div>
+  </div>
+  <div class="ph" style="height:300px;">
+    <svg viewBox="0 0 24 24"><path d="M20 12V8H6a2 2 0 0 1-2-2V4"/><path d="M4 6v14a2 2 0 0 0 2 2h14v-4"/><path d="M20 14a2 2 0 0 0 0-4"/></svg>
+    <div class="ph-label">Customer list — each row with unique address + deposit history</div>
+  </div>
+</div>
+
+<!-- ② PROBLEM -->
+<section class="s-gray" data-s="02 · PROBLEM">
+  <div class="center"><span class="section-tag">The Problem</span><div class="section-heading">Shared addresses break attribution at scale</div></div>
+  <div class="prob-grid">
+    <div class="prob-item"><div class="prob-x">✕</div><div class="prob-text">Platforms that share one wallet address across multiple customers can't reliably attribute which payment came from whom without manual matching.</div></div>
+    <div class="prob-item"><div class="prob-x">✕</div><div class="prob-text">Manual reconciliation of incoming crypto payments is time-consuming and error-prone at scale — a spreadsheet nightmare as volume grows.</div></div>
+    <div class="prob-item"><div class="prob-x">✕</div><div class="prob-text">Address reuse creates privacy risks for customers and operational overhead for operators, especially across multiple chains.</div></div>
+  </div>
+</section>
+
+<!-- ③ HOW IT WORKS -->
+<section class="s-dark" data-s="03 · HOW IT WORKS">
+  <div class="center"><span class="section-tag">How It Works</span><div class="section-heading">Unique address. Automatic attribution.</div></div>
+  <div class="steps-wrap">
+    <div class="steps-row">
+      <div class="step">
+        <div class="step-num">1</div>
+        <div class="step-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg></div>
+        <div class="step-title">Create a customer</div>
+        <div class="step-desc">Via API or dashboard — PayRam generates a dedicated deposit address.</div>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <div class="step-icon"><svg viewBox="0 0 24 24"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg></div>
+        <div class="step-title">Customer sends funds</div>
+        <div class="step-desc">Customer sends any supported token to their unique address.</div>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <div class="step-icon"><svg viewBox="0 0 24 24"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></div>
+        <div class="step-title">Payment attributed</div>
+        <div class="step-desc">PayRam detects the inbound tx and attributes it to the correct customer instantly.</div>
+      </div>
+      <div class="step">
+        <div class="step-num">4</div>
+        <div class="step-icon"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2"/><path d="M15 7h6m-3-3v6"/></svg></div>
+        <div class="step-title">Dashboard + webhook</div>
+        <div class="step-desc">Balance updates instantly. Webhook fires to your backend.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ④ BENEFITS -->
+<section class="s-gray" data-s="04 · BENEFITS">
+  <span class="section-tag">Key Benefits</span>
+  <div class="section-heading">Clean data. Zero manual work.</div>
+  <div class="benefits-grid">
+    <div class="card"><div class="ci"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg></div><div class="ct">Unique address per customer</div><div class="cd">No shared addresses, no attribution confusion, no manual matching.</div></div>
+    <div class="card"><div class="ci"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></div><div class="ct">Multi-chain per address</div><div class="cd">Each address works across Ethereum, Polygon, Base, and Tron simultaneously.</div></div>
+    <div class="card"><div class="ci"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2"/><path d="M15 7h6m-3-3v6"/></svg></div><div class="ct">Real-time webhooks</div><div class="cd">Get notified the instant a deposit arrives. No polling required.</div></div>
+    <div class="card"><div class="ci"><svg viewBox="0 0 24 24"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/></svg></div><div class="ct">Automatic reconciliation</div><div class="cd">Every deposit is attributed to a customer automatically. No spreadsheet needed.</div></div>
+    <div class="card"><div class="ci"><svg viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></div><div class="ct">Full deposit history</div><div class="cd">View every transaction per customer — timestamps, amounts, and chain.</div></div>
+    <div class="card"><div class="ci"><svg viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></div><div class="ct">Privacy-preserving</div><div class="cd">No address reuse means better privacy for customers and cleaner on-chain data for you.</div></div>
+  </div>
+</section>
+
+<!-- ⑤ DEEP DIVE -->
+<section class="s-white" data-s="05 · DEEP DIVE">
+  <span class="section-tag">Deep Dive</span>
+  <div class="section-heading">See it in action</div>
+  <div class="deepdive-rows">
+    <div class="ddr">
+      <div class="ddr-text"><div class="ddr-label">API Reference</div><div class="ddr-title">POST /customers/{id}/wallet</div><div class="ddr-desc">A single API call creates a customer record and returns a unique deposit address object containing the address string, supported chains, and a creation timestamp. Fully idempotent — calling it twice returns the same address.</div></div>
+      <div class="ddr-visual"><div class="ph" style="height:210px;"><svg viewBox="0 0 24 24"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg><div class="ph-label">POST /customers/{id}/wallet — response object mockup</div></div></div>
+    </div>
+    <div class="ddr flip">
+      <div class="ddr-text"><div class="ddr-label">Operator Dashboard</div><div class="ddr-title">Customer list with live balances</div><div class="ddr-desc">The dashboard shows every customer with their deposit address, current balance across chains, and last deposit date. Click any customer to see their full deposit history with txn hashes and amounts.</div></div>
+      <div class="ddr-visual"><div class="ph" style="height:210px;"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg><div class="ph-label">Customer wallet list — address, balance, last deposit columns</div></div></div>
+    </div>
+    <div class="ddr">
+      <div class="ddr-text"><div class="ddr-label">Webhooks</div><div class="ddr-title">Deposit notification payload</div><div class="ddr-desc">When a deposit is detected, PayRam fires a webhook with customer ID, wallet address, token, amount, chain, and txn hash. Your backend can immediately update the customer's balance and trigger any downstream logic.</div></div>
+      <div class="ddr-visual"><div class="ph" style="height:210px;"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2"/><path d="M15 7h6m-3-3v6"/></svg><div class="ph-label">Webhook payload — deposit.confirmed event structure</div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ⑥ USE CASES -->
+<section class="s-gray" data-s="06 · USE CASES">
+  <span class="section-tag">Use Cases</span>
+  <div class="section-heading">Who uses Deposit Wallets</div>
+  <div class="persona-grid">
+    <div class="persona-card"><div class="persona-icon"><svg viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></div><div class="persona-title">Exchange / Trading Platform</div><div class="persona-desc">Assigns a deposit address to every user for incoming stablecoin top-ups. Balances update in real time with no reconciliation effort from the ops team.</div></div>
+    <div class="persona-card"><div class="persona-icon"><svg viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg></div><div class="persona-title">Subscription SaaS</div><div class="persona-desc">Uses customer wallets to track recurring stablecoin payments per account. No manual invoice matching — every payment is auto-attributed on arrival.</div></div>
+    <div class="persona-card"><div class="persona-icon"><svg viewBox="0 0 24 24"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg></div><div class="persona-title">Marketplace</div><div class="persona-desc">Gives each seller a unique address to receive payouts directly. Buyer settlements route to the right seller automatically without ops involvement.</div></div>
+  </div>
+</section>
+
+<!-- ⑦ COMPARISON -->
+<section class="s-white" data-s="07 · COMPARISON">
+  <div class="center"><span class="section-tag">Comparison</span><div class="section-heading">The old way vs. PayRam</div></div>
+  <div class="cmp-split">
+    <div class="cmp-col">
+      <div class="cmp-hdr old">Traditional Approach</div>
+      <div class="cmp-row old-row"><div class="cmp-dot x">✕</div>One shared address — manual attribution required</div>
+      <div class="cmp-row old-row"><div class="cmp-dot x">✕</div>Spreadsheet to match txn hashes to customers</div>
+      <div class="cmp-row old-row"><div class="cmp-dot x">✕</div>Check block explorer manually for deposits</div>
+      <div class="cmp-row old-row"><div class="cmp-dot x">✕</div>Address reused for repeat customers</div>
+      <div class="cmp-row old-row"><div class="cmp-dot x">✕</div>Build address management infrastructure yourself</div>
+    </div>
+    <div class="cmp-col">
+      <div class="cmp-hdr new">PayRam Deposit Wallets</div>
+      <div class="cmp-row new-row"><div class="cmp-dot ok">✓</div>Unique address per customer — attribution automatic</div>
+      <div class="cmp-row new-row"><div class="cmp-dot ok">✓</div>Real-time automatic attribution on every deposit</div>
+      <div class="cmp-row new-row"><div class="cmp-dot ok">✓</div>Webhook fires on every deposit — no polling</div>
+      <div class="cmp-row new-row"><div class="cmp-dot ok">✓</div>New or persistent address — you choose</div>
+      <div class="cmp-row new-row"><div class="cmp-dot ok">✓</div>Out of the box via a single API call</div>
+    </div>
+  </div>
+</section>
+
+<!-- ⑧ RELATED -->
+<section class="s-gray" data-s="08 · RELATED">
+  <span class="section-tag">Explore More</span><div class="section-heading">Related features</div>
+  <div class="related-grid">
+    <div class="related-card card"><div class="ci"><svg viewBox="0 0 24 24"><polyline points="23 4 23 10 17 10"/><path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"/></svg></div><div class="ct">SmartSweep</div><div class="cd">Automatically consolidate deposit wallet balances into your master wallet.</div><a class="related-link" href="smartsweep.html">Learn more →</a></div>
+    <div class="related-card card"><div class="ci"><svg viewBox="0 0 24 24"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div><div class="ct">Payouts</div><div class="cd">Send stablecoin payouts to sellers and customers directly from your wallet.</div><a class="related-link" href="payouts.html">Learn more →</a></div>
+    <div class="related-card card"><div class="ci"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg></div><div class="ct">Operator Mode</div><div class="cd">View all customer wallets, balances, and deposit history in one dashboard.</div><a class="related-link" href="operator.html">Learn more →</a></div>
+  </div>
+</section>
+
+<!-- ⑨ FAQ -->
+<section class="s-white" data-s="09 · FAQ">
+  <div class="center"><span class="section-tag">FAQ</span><div class="section-heading">Frequently asked questions</div></div>
+  <div class="faq-wrap">
+    <div class="faq-item open"><div class="faq-q">What is a customer deposit wallet in a crypto payment system? <span class="faq-arrow">▲</span></div><div class="faq-a">A customer deposit wallet is a unique on-chain address assigned exclusively to one customer. When that customer sends funds to their address, the payment is automatically attributed to them in your platform — no manual matching needed.</div></div>
+    <div class="faq-item"><div class="faq-q">How does PayRam assign unique addresses to customers? <span class="faq-arrow">▼</span></div><div class="faq-a"></div></div>
+    <div class="faq-item"><div class="faq-q">Which blockchains are supported for customer deposit wallets? <span class="faq-arrow">▼</span></div><div class="faq-a"></div></div>
+    <div class="faq-item"><div class="faq-q">What happens if a customer sends the wrong token to their deposit address? <span class="faq-arrow">▼</span></div><div class="faq-a"></div></div>
+    <div class="faq-item"><div class="faq-q">Can I use customer deposit wallets for recurring subscription billing? <span class="faq-arrow">▼</span></div><div class="faq-a"></div></div>
+  </div>
+</section>
+
+<!-- ⑩ CTA -->
+<section class="cta-sec" data-s="10 · CTA">
+  <div class="section-tag">Get Started</div>
+  <div class="cta-headline">Assign every customer their own wallet address.</div>
+  <div class="btn-row"><button class="btn btn-solid">Visit Docs</button><button class="btn btn-outline" style="border-color:#555;color:#ccc">Talk to Team</button></div>
+  <div class="cta-sub">No KYC required · Self-hosted · Go live in 10 minutes</div>
+</section>
+
+<footer class="footer">
+  <div class="footer-cols">
+    <div><div class="footer-logo">PayRam</div><div class="footer-tagline">The Payment Rail for Permissionless Commerce.</div></div>
+    <div><div class="footer-col-title">Products</div><ul class="footer-links"><li><a href="gateway.html">Gateway</a></li><li><a href="operator.html">Operator Mode</a></li><li><a href="shopify.html">Shopify Plugin</a></li></ul></div>
+    <div><div class="footer-col-title">Features</div><ul class="footer-links"><li><a href="payment-links.html">Payment Links</a></li><li><a href="deposit-wallets.html">Deposit Wallets</a></li><li><a href="smartsweep.html">SmartSweep</a></li><li><a href="payouts.html">Payouts</a></li></ul></div>
+    <div><div class="footer-col-title">Resources</div><ul class="footer-links"><li><a href="#">Docs</a></li><li><a href="#">Blog</a></li><li><a href="#">API Reference</a></li></ul></div>
+    <div><div class="footer-col-title">Company</div><ul class="footer-links"><li><a href="#">About</a></li><li><a href="#">Contact</a></li><li><a href="#">Careers</a></li></ul></div>
+    <div><div class="footer-col-title">Legal</div><ul class="footer-links"><li><a href="#">Terms</a></li><li><a href="#">Privacy</a></li><li><a href="#">Security</a></li></ul></div>
+  </div>
+  <div class="footer-bar"><div class="footer-bar-text">© 2026 PayRam · All rights reserved</div><div class="footer-bar-badges"><span class="footer-bar-badge">Audited by QuillAudits</span><span class="footer-bar-badge">Circle Alliance Partner</span></div></div>
+</footer>
+</body></html>
