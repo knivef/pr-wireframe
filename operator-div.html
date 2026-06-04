@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Operator Div — PayRam</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background: #080e1d;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+  }
+  .container { width: 100%; max-width: 680px; }
+
+  /* ── Component ── */
+  .pr-free-section {
+    font-family: 'Poppins', sans-serif;
+    background: #0e1225;
+    border: 1px solid #1e2740;
+    border-radius: 16px;
+    padding: 48px 40px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .pr-free-section::before {
+    content: '';
+    position: absolute;
+    top: -60px; left: 50%; transform: translateX(-50%);
+    width: 320px; height: 120px;
+    background: radial-gradient(ellipse, rgba(202,255,84,0.08) 0%, transparent 70%);
+    pointer-events: none;
+  }
+  .pr-free-label {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #0e1225;
+    background: #CAFF54;
+    border-radius: 4px;
+    padding: 4px 12px;
+    margin-bottom: 24px;
+  }
+  .pr-free-stat {
+    font-size: 80px;
+    font-weight: 700;
+    color: #CAFF54;
+    line-height: 1;
+    margin-bottom: 4px;
+    letter-spacing: -2px;
+  }
+  .pr-free-stat-label {
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #5a6a8a;
+    margin-bottom: 28px;
+  }
+  .pr-free-body {
+    font-size: 15px;
+    color: #8a9bb8;
+    line-height: 1.7;
+    max-width: 540px;
+    margin: 0 auto 32px;
+  }
+  .pr-free-body strong {
+    color: #c8d8f0;
+    font-weight: 600;
+  }
+  .pr-free-pills {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 32px;
+  }
+  .pr-pill {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    font-size: 13px;
+    font-weight: 500;
+    color: #8a9bb8;
+    background: #131929;
+    border: 1px solid #1e2e4a;
+    border-radius: 100px;
+    padding: 7px 16px;
+  }
+  .pr-pill-dot {
+    width: 6px; height: 6px;
+    border-radius: 50%;
+    background: #01E46F;
+    flex-shrink: 0;
+  }
+  .pr-free-cta {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: #0e1225;
+    background: #01E46F;
+    border-radius: 8px;
+    padding: 14px 32px;
+    text-decoration: none;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="pr-free-section">
+    <div class="pr-free-label">Pricing</div>
+    <div class="pr-free-stat">$0</div>
+    <div class="pr-free-stat-label">to deploy and get started</div>
+    <p class="pr-free-body">
+      No licence fee. No monthly cost. <strong>No approval process.</strong>
+      Deploy on your own VPS in ten minutes and start onboarding merchants the same day.
+    </p>
+    <div class="pr-free-pills">
+      <div class="pr-pill"><span class="pr-pill-dot"></span>Free to deploy</div>
+      <div class="pr-pill"><span class="pr-pill-dot"></span>Free to run</div>
+      <div class="pr-pill"><span class="pr-pill-dot"></span>No licence fee</div>
+      <div class="pr-pill"><span class="pr-pill-dot"></span>No approval required</div>
+    </div>
+    <a class="pr-free-cta" href="/setup">Deploy your instance</a>
+  </div>
+</div>
+</body>
+</html>
